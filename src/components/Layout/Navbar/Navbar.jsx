@@ -83,7 +83,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar  block z-10 bg-light shadow-lg dark:bg-dark py-2 fixed  start-0 end-0 ${nav} transition-all duration-600`}
+        className={`navbar  block z-20 bg-light shadow-lg dark:bg-dark py-2 fixed  start-0 end-0 ${nav} transition-all duration-600`}
       >
         <section className="container mx-auto flex justify-between items-center px-4  ">
           <div className="">
@@ -94,7 +94,7 @@ const Navbar = () => {
               </p>
             </Link>
           </div>
-          <div className=" gap-3 flex items-center">
+          <div className=" gap-3 flex z-20 items-center">
             <div className="dropdown dropdown-end cursor-pointer">
               <div
                 tabIndex={0}
@@ -108,7 +108,7 @@ const Navbar = () => {
 
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content overflow-hidden  rounded-box z-1 mt-3 w-52 p-2 bg-light shadow-lg dark:bg-dark dark:outline-1  dark:outline-gray-600"
+                className="menu menu-sm dropdown-content overflow-hidden  rounded-box  mt-3 w-52 p-2 bg-light shadow-lg dark:bg-dark dark:outline-1  dark:outline-gray-600"
               >
                 <Link
                   to="/profile"
