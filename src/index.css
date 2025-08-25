@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@plugin "daisyui";
+
+@theme {
+  --color-light: #fff;
+  --color-dark: #252728;
+  --color-main: #1a71fd;
+  --color-section: #1c1c1d;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.active {
+  background-color: #1a71fd;
+  color: #fff;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+  cursor: pointer;
+}
+
+.my-skeleton{
+      background-image: linear-gradient(
+    105deg,
+    #0000 0% 40%,
+    #ffffff 50%,
+    #0000 60% 100%
+  );
+}
