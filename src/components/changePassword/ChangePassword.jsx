@@ -62,6 +62,7 @@ const ChangePassword = () => {
   const { mutate, isPending } = useMutation({
     mutationFn: changePassword,
     onSuccess: (data) => {
+      document.activeElement.blur();
       toast.success(data.data.message);
       localStorage.setItem("token", data?.data?.token);
       reset();
@@ -69,7 +70,6 @@ const ChangePassword = () => {
     },
     onError: (e) => {
       toast.error(e.response.data.error);
-      
     },
   });
   // ? jsx code =========================================================
