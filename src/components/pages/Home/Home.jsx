@@ -38,7 +38,6 @@ const Home = () => {
     },
   });
 
-  // what is this mean (done now )======================================================================================
   const loadMoreRef = useRef();
   useEffect(() => {
     if (!loadMoreRef.current || !hasNextPage) return;
